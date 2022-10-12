@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sign in account</title>
+    <style>
+        *{
+    margin: o;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+body{
+    background: url(webbackground.jpg)no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.wrapper{
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+    background: #dedede;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+
+
+}
+.header{
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+    top: 30px;
+    left: 140px;
+    color: #2d3436;
+
+
+
+}
+.facebook{
+    position: relative;
+    top: 50px;
+    left:40px;
+    height: 50px;
+    width: 200px;
+    background: #3965dd;
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0 0 14px 2px rgb(255, 226, 226);
+
+    
+}
+.facebook i{
+    line-height: 50px;
+    padding: 0 20px;
+    font-size: 30px;
+    color: white;
+
+}
+.facebook p{
+    font-size: 33px;
+    margin-top: 0px;
+    font-weight: 600;
+    line-height: 50px;
+    color:white;
+    
+
+
+}
+.facebook:hover{
+    background: #14b0db;
+    box-shadow: 0px 0px 10px --2px rgba(122,122,122,1);
+}
+.google{
+    position: relative;
+    top: 50px;
+    left:260px;
+    height: 50px;
+    width: 200px;
+    background: #ffffff;
+    border-radius: 5px;
+    
+    
+    cursor: pointer;
+    transition: .5s;
+    margin-top: -50px;
+    box-shadow: 0 0 14px 2px rgb(255, 226, 226);
+
+    
+    
+}
+.google i{
+    line-height: 50px;
+    padding: 0 20px;
+    font-size: 30px;
+    color: white;
+
+}
+.google p{
+    font-size: 33px;
+    margin-top: 0px;
+    font-weight: 600;
+    line-height: 50px;
+    color:rgb(51, 36, 36);
+    
+
+
+}
+.google:hover{
+    background: #a88c8c;
+    box-shadow: 0px 0px 10px --2px rgba(122,122,122,1);
+}
+.login-form{
+    
+    padding:20px 40px;
+    margin-top: 50px;
+}
+.login-form .label{
+    font-size: 18px;
+    margin: 10px 0;
+    color:#2d3436 ;
+
+
+}
+.login-form input{
+    height: 40px;
+    width: 400px;
+    border-radius: 3px;
+    outline:none;
+    padding:0 10px;
+    font-size: 18px;
+    border: 1px solid silver;
+}
+.login-form input:focus{
+    transition: .3s;
+    border: 1px solid #999999;
+}
+.login-form button{
+    margin-top: 45px;
+    height: 50px;
+    width: 420px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    border: 1px solid #0f0f0f;
+    border-radius: 3px;
+    background: #302e2d;
+    transition: .5s;
+}
+.login-form button:hover{
+    background: #3b3838;
+}
+.footer{
+
+    position: relative;
+    top: 20px;
+    left: 110px;
+    color: #2d3436;
+    cursor: pointer;
+}
+.forget{
+
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
+
+
+    </style>
+    
+
+    
+
+</head>
+<body>
+    <div class="wrapper">
+        <label class="header">Sign in with</label>
+        <div class="facebook">
+        <i class="fa-brands fa-square-facebook"></i>
+        <p>
+            facebook
+        </p>
+            
+        </div>
+        
+        <div class="google facebook">
+        <i class="fab fa-facebook-square"></i>
+        <p>
+            Google
+        </p>
+                
+        </div>
+        <div class="login-form">
+            <div class="label">Username</div>
+            <input type="text" required><br>
+
+            <div class="label">password <u class="forget">Forgot?</u> </div>
+            <input type="password" required>
+            <button>sign in</button>
+            <div class="footer">
+                <p>Not a member?<u>Sign up now</u></p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
